@@ -1,0 +1,150 @@
+.ws_apps_dashboard_folder_tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 116px;
+    padding: 14px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f7f8 100%);
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.ws_apps_dashboard_folder_tile:hover,
+.ws_apps_dashboard_folder_tile:focus-visible {
+    border-color: rgba(48, 120, 255, 0.4);
+    box-shadow: 0 6px 22px rgba(48, 120, 255, 0.10);
+    transform: translateY(-1px);
+}
+
+.ws_apps_dashboard_folder_tile--drag-over {
+    border-color: rgba(48, 120, 255, 0.7);
+    background: rgba(48, 120, 255, 0.04);
+}
+
+.ws_apps_dashboard_folder_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: #eef4ff;
+    color: #2b6ae4;
+    font-size: 26px;
+}
+
+.ws_apps_dashboard_folder_name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2f3136;
+    text-align: center;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ws_apps_dashboard_folder_count {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.ws_apps_dashboard_folder_preview {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.62);
+    text-align: center;
+    max-width: 120px;
+}
+
+.ws_apps_dashboard_folder_overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.18);
+    z-index: 9999;
+}
+
+.ws_apps_dashboard_folder_overlay.hidden {
+    display: none;
+}
+
+.ws_apps_dashboard_folder_panel {
+    width: min(520px, calc(100vw - 32px));
+    max-height: 75vh;
+    overflow: auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ws_apps_dashboard_folder_panel_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ws_apps_dashboard_folder_panel_header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ws_apps_dashboard_folder_close {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #f5f6f7;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.ws_apps_dashboard_folder_panel_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    padding: 18px 20px 20px;
+}
+
+.ws_apps_dashboard_folder_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    background: #f9fafa;
+    cursor: pointer;
+    text-align: left;
+}
+
+.ws_apps_dashboard_folder_item_icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: #edf3ff;
+    color: #2f6cd8;
+}
+
+.ws_apps_dashboard_drag_over {
+    border-color: rgba(48, 120, 255, 0.8) !important;
+    box-shadow: 0 0 0 2px rgba(48, 120, 255, 0.15);
+}
+
+.ws_apps_dashboard_folder_empty {
+    padding: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}

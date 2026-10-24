@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="ws_apps_dashboard_folders.AppFolderTile">
+        <div class="ws_apps_dashboard_folder_tile" draggable="true" data-role="folder">
+            <div class="ws_apps_dashboard_folder_icon">
+                <i class="fa fa-folder" aria-hidden="true"/>
+            </div>
+            <div class="ws_apps_dashboard_folder_body">
+                <div class="ws_apps_dashboard_folder_name">Folder</div>
+                <div class="ws_apps_dashboard_folder_count">0 apps</div>
+            </div>
+        </div>
+    </t>
+</templates>
